@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_marginTop="40dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="starshines.numberfacts.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/txtcategory"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select a Category"
+        android:layout_marginTop="35dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:weightSum="4"
+        android:orientation="vertical"
+        >
+
+        <Button android:id="@+id/btntrivia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/CustomStyleButton"
+            android:layout_margin="5dp"
+            android:text="trivia"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:onClick="onClickTrivia"/>
+
+        <Button android:id="@+id/btnmath"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            style="@style/CustomStyleButton"
+            android:textColor="#000"
+            android:text="math"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:onClick="onClickMath"/>
+
+        <Button
+            android:id="@+id/btndate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            style="@style/CustomStyleButton"
+            android:textColor="#000"
+            android:text="date"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:onClick="onClickDate"/>
+
+        <Button
+            android:id="@+id/btnyear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            style="@style/CustomStyleButton"
+            android:textColor="#000"
+            android:text="year"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:onClick="onClickYear"/>
+
+
+    </LinearLayout>
+
+<TextView
+    android:id="@+id/txtResponse"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAlignment="center"
+    android:layout_margin="20dp"
+    android:textStyle="italic|bold"
+    android:text="String with a fact would be seen here"/>
+
+</LinearLayout>
+    </ScrollView>

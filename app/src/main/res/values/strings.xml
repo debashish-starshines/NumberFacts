@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Number Facts</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="category">
+        <item>-select-</item>
+        <item>trivial</item>
+        <item>math</item>
+        <item>date</item>
+        <item>year</item>
+    </string-array>
+</resources>
